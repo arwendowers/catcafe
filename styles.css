@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3e9d8;
+    font-family: "Huninn", sans-serif;
+}
+
+.screen-box {
+    width: 950px;
+    height: 850px;
+    max-width: 92vw;
+    max-height: 88vh;
+    background-color: #dcc7b0;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(90, 60, 30, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 40px;
+    border: 6px solid #a88d74;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+h1 {
+    color: #5c4033;
+    font-family: "Dongle", sans-serif;
+    font-size: 5.4rem;
+    font-weight: normal;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+#start-btn {
+    background-color: #8b5e3c;
+    color: #faf6f0;
+    border: none;
+    padding: 14px 48px;
+    font-size: 1.4rem;
+    font-family: inherit;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-bottom: 10px;
+}
+
+#start-btn:hover {
+    background-color: #744b30;
+}
+
+.cat-gif {
+    width: 30%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 10px;
+}
+
+#story-text {
+    color: #5c4033;
+    font-size: 1.35rem;
+    line-height: 1.6;
+    margin-bottom: 80px;
+    max-width: 90%;
+    text-align: left;
+    white-space: pre-line;
+}
+
+#action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.action-btn {
+    background-color: #8b5e3c;
+    color: #faf6f0;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.15rem;
+    font-family: inherit;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.action-btn:hover {
+    background-color: #744b30;
+}
+
+#scene-image {
+    width: 20%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 16px;
+    margin-top: 10px;
+}
+
+.scene-play1 #story-text,
+.scene-sit1 #story-text,
+.scene-food1 #story-text {
+    margin-bottom: 40px;
+}
+
+.scene-play1 #action-buttons,
+.scene-sit1 #action-buttons,
+.scene-food1 #action-buttons {
+    margin-bottom: 80px;
+    max-width: 200px;
+}
+
+.scene-play2 #story-text,
+.scene-sit2 #story-text,
+.scene-food2 #story-text {
+    margin-bottom: 30px;
+}
+
+.scene-play2 #action-buttons,
+.scene-sit2 #action-buttons,
+.scene-food2 #action-buttons {
+    margin-bottom: 25px;
+}
+
+.scene-home .btn-icon {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+.scene-home .action-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    max-width: 420px;
+}
+
+.scene-home .action-row .action-btn {
+    flex: 1;
+    margin: 0;
+}
+
+.scene-home #action-buttons {
+    align-items: center;
+    max-width: 300px;
+}
+
+.scene-orange #story-text,
+.scene-tuxedo #story-text,
+.scene-tortoiseshell #story-text,
+.scene-white #story-text,
+.scene-black #story-text,
+.scene-gray #story-text {
+    margin-bottom: 50px;
+}
+
+.scene-orange #action-buttons,
+.scene-tuxedo #action-buttons,
+.scene-tortoiseshell #action-buttons,
+.scene-white #action-buttons,
+.scene-black #action-buttons,
+.scene-gray #action-buttons {
+    margin-bottom: 35px;
+    max-width: 200px;
+}
+
+
+/* === Tablets === */
+@media (max-width: 800px) {
+    .screen-box {
+        width: 92vw;
+        height: auto;
+        min-height: 80vh;
+        max-height: none;
+        padding: 30px 24px;
+        border-width: 5px;
+        border-radius: 20px;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+        margin-bottom: 20px;
+    }
+
+    #start-btn {
+        font-size: 1.25rem;
+        padding: 12px 40px;
+    }
+
+    #story-text {
+        font-size: 1.2rem;
+        margin-bottom: 60px;
+        max-width: 95%;
+    }
+
+    #action-buttons {
+        gap: 16px;
+        max-width: 90%;
+    }
+
+    .action-btn {
+        font-size: 1.05rem;
+        padding: 12px 16px;
+    }
+
+    #scene-image {
+        width: 25%;
+        max-width: 260px;
+    }
+
+    .cat-gif {
+        width: 50%;
+        max-width: 280px;
+    }
+
+    .scene-home .btn-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .scene-home .action-row {
+        max-width: 90%;
+        gap: 10px;
+    }
+}
+
+
+/* === Mobile === */
+@media (max-width: 480px) {
+    .screen-box {
+        width: 94vw;
+        min-height: 85vh;
+        padding: 24px 16px;
+        border-width: 4px;
+        border-radius: 16px;
+    }
+
+    h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    #start-btn {
+        font-size: 1.15rem;
+        padding: 12px 32px;
+    }
+
+    #story-text {
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: 35px;
+    }
+
+    #action-buttons {
+        gap: 12px;
+        max-width: 90%;
+    }
+
+    .action-btn {
+        font-size: 1rem;
+        padding: 12px 14px;
+        border-radius: 10px;
+    }
+
+    #scene-image {
+        width: 40%;
+        max-width: 200px;
+        margin-top: 16px;
+    }
+
+    .cat-gif {
+        width: 65%;
+        max-width: 200px;
+    }
+
+    .scene-play1 #story-text,
+    .scene-sit1 #story-text,
+    .scene-food1 #story-text {
+        margin-bottom: 40px;
+    }
+
+    .scene-play1 #action-buttons,
+    .scene-sit1 #action-buttons,
+    .scene-food1 #action-buttons {
+        margin-bottom: 30px;
+        max-width: 200px;
+    }
+
+    .scene-play2 #story-text,
+    .scene-sit2 #story-text,
+    .scene-food2 #story-text {
+        margin-bottom: 30px;
+    }
+
+    .scene-play2 #action-buttons,
+    .scene-sit2 #action-buttons,
+    .scene-food2 #action-buttons {
+        margin-bottom: 25px;
+    }
+
+    .scene-home .btn-icon {
+        width: 42px;
+        height: 42px;
+    }
+
+    .scene-home .action-row {
+        gap: 8px;
+        max-width: 100%;
+    }
+
+    .scene-home #action-buttons {
+        max-width: 100%;
+    }
+}
